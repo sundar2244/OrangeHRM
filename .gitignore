@@ -1,0 +1,6 @@
+# Ignore log files
+*.log
+
+# Ignore environment files
+.env
+f1.env
