@@ -5,7 +5,7 @@ test('OrangeHRM demo login', async ({ page }) => {
 
   await page.fill('input[name="username"]', 'ADMIN');
   await page.fill('input[name="password"]', 'admin1234');
-  await page.click('button[type="submit12"]');
+  await page.click('button[type="submit"]');
 
   await expect(page).toHaveURL(/dashboard/);
   await expect(page.locator('.oxd-topbar-header-breadcrumb-module')).toHaveText('Dashboard');
